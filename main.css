@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+}
+
+/* Navbar */
+#nav_bar {
+    width: 100%;
+    height: auto;
+    top:0;
+    background-color: rgba(155, 143, 244, 0.5);
+    overflow: hidden;
+    display: flex;
+}
+
+.nav_logo {
+    text-align: left;
+    padding: 1em;
+    margin:0;
+}
+
+.nav_links {
+    margin-left: auto;
+}
+
+.nav_links > a {
+    margin: 1.75em 1em;
+    padding: 0.2em;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    display: inline-block;
+    text-decoration: none;
+    color: white
+}
+
+.nav_logo:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+.nav_links > a:hover {
+    text-decoration: underline;
+    color:blueviolet;
+    transform: scale(1.5);
+}
+
+#projects {
+    margin-right: 3em;
+}
