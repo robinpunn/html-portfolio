@@ -1,3 +1,8 @@
+/* Global */
+*{
+    box-sizing: border-box;
+}
+
 html, body {
     width: 100%;
     height: 100%;
@@ -25,7 +30,7 @@ html, body {
 }
 
 .nav_links {
-    margin-left: auto;
+    margin: auto 1em auto auto;
 }
 
 .nav_links > a {
@@ -53,6 +58,27 @@ html, body {
     transform: scale(1.2);
 }
 
-#projects {
+.projects {
     margin-right: 3em;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    background-color: rgba(155, 143, 244, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.social > a {
+    margin: 0.5em;
+}
+
+.github:hover,.linkedin:hover {
+    transform: scale(1.5);
 }

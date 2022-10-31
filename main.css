@@ -3,16 +3,17 @@ body {
     background-image: url(images/robin2.png);
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-position: center;
     background-repeat: none;
+    background-size: cover;
     font-family: "Montserrat", serif;
 }
 
 /* TEXT */
-#body-container {
+.container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
 .left_body, .right_body {
@@ -28,7 +29,7 @@ body {
 }
 
 .left_body > h2, .right_body > h2 {
-    color: purple;
+    color: rgb(255, 255, 255);
     font-weight: 900;
 }
 
