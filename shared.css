@@ -8,7 +8,6 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
     font-family: "Montserrat", serif;
 }
 
@@ -65,7 +64,7 @@ html, body {
 /* Footer */
 .footer {
     width: 100%;
-    height: 10%;
+    height: 10vh;
     bottom: 0;
     background-color: rgba(155, 143, 244, 0.5);
     display: flex;
