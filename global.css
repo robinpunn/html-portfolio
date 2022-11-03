@@ -9,14 +9,15 @@ html, body {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
+    background: linear-gradient(to top,rgba(0,0,255,0.1), rgba(133,0,156,.35));
 }
 
-/* NAVBAR */
+/* NAVBAR (also footer) */
 .navbar {
     background-color: rgba(155, 143, 244, 0.75);
 }
 
-.logo:hover {
+.logo:hover, .social:hover {
     transform: scale(1.1);
     color: white;
 }
