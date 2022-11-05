@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP SASS -->
+    <link rel="stylesheet" href="../bootstrap/scss/styles.scss">
+    <link rel="stylesheet" href="../styles/global.css">
+    <!-- MONTSERRAT FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <title>My Email Portfolio</title>
+</head>
+<body>
+    <!-- NAVBAR-->
+    <nav class="navbar sticky-top navbar-expand-md">
+        <!-- LOGO -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img class="logo" src="../images/robinpunn.png" alt="robinpunn logo">
+          </a>
+          <!-- SOCIAL -->
+          <a class="navbar-brand" target="_blank" href="https://github.com/robinpunn">
+            <img class="social" src="../images/github.png" alt="github icon">
+          </a>
+          <a class="navbar-brand" target="_blank" href="https://linkedin.com/in/robin-punnoose-251633164">
+            <img class="social" src="../images/linkedin.png" alt="linkedin icon">
+          </a>
+          <!-- SMALL SCREEN TOGGLE TO DROPDOWN -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- NAV LINKS -->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="navbar-nav nav-justified fw-bold">
+                <a class="nav-link m-2 active" aria-current="page" href="./about.html">About</a>
+                <a class="nav-link m-2 text-white" href="./skills.html">Skills</a>
+                <a class="nav-link m-2 text-white" href="./projects.html  ">Projects</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+    <!-- CONTENT -->
+    <main class="container-fluid">
+        <section class="row my-3">
+            <article class="col-12 col-md-4 px-5 who">
+                <h3>Who Am I?</h3>
+                <p>I'm a former healthcare worker that has worked as pharmacy technician and a registered nurse transitioning to a career in web development.</p>
+                <p>My interest in blockchain technology motivated me to explore programming languages.</p>
+                <p>I've devoted the last two years of my life to learning about web and blockchain development.</p>
+            </article>
+            <article class="col-12 col-md-4 px-5 strengths">
+                <h3>My Strengths</h3>
+                <p>Working in healthcare emphasized the importance of teamwork which is a integral to  any industry.</p>
+                <p>My time management and cricital thinking skills were enhanced working in the healthcare field.</p>
+                <p>Continuing education as a nurse was necessary to provide quality of care.  Learning new things and expanding on what I know is an important part of my life.</p>
+            </article>
+            <article class="col-12 col-md-4 px-5 goals">
+                <h3>My Goals</h3>
+                <p>My goal as a developer is to continue my growth.  I've created a foundation with HTML/CSS/JavaScript which I will build upon.</p>
+                <p>I would like to establish a start to my professional career with the foundation I've built.  As I set out to master JavaScript, I will be learning PHP, Python, and Rust.</p>
+                <p>I will expand my knowledge of the blockchain by continuing to learn Solidity.</p>
+            </article>
+        </section>
+    </main>
+    <!-- BOOTSTRAP JS -->
+    <script type="module" src="../bootstrap/js/main.js"></script>
+  </body>
+  </html>

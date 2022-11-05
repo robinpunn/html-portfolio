@@ -3,23 +3,32 @@
     box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
+html {
+    height: 100%;
+}
+
+body {
+    /* width: 100%; */
     height: 100%;
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
-    background: linear-gradient(to top,rgba(0,0,255,0.1), rgba(133,0,156,.35));
+    background: linear-gradient(to top,#0000ff1a, #85009c59);
+    background-repeat: none;
+    background-attachment: fixed;
 }
 
 /* NAVBAR (also footer) */
 .navbar {
-    background-color: rgba(155, 143, 244, 0.75);
+    background-color: #9b8ff4bf;
 }
 
 .logo:hover, .social:hover {
-    transform: scale(1.1);
-    color: white;
+    transform: scale(1.1); /*Navbar and Footer*/
+}
+
+.active {
+    color: rgb(133,0,156) !important;
 }
 
 .navbar-nav > .nav-link:hover {
@@ -35,3 +44,4 @@ html, body {
         transform: scale(1.2);
     }
 }
+
