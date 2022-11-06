@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/scss/styles.scss">
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <!-- MONTSERRAT FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap" rel="stylesheet">
     <title>My Email Portfolio</title>
 </head>
 <body>
     <!-- NAVBAR-->
-    <nav class="navbar sticky-top navbar-expand-md">
+    <nav class="navbar fixed-top navbar-expand-md">
         <!-- LOGO -->
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img class="logo" src="./images/robinpunn.png" alt="robinpunn logo">
           </a>
-          <a class="navbar-brand" target="_blank" href="https://github.com/robinpunn">
-            <img class="social" src="./images/github.png" alt="github icon">
-          </a>
-          <a class="navbar-brand" target="_blank" href="https://linkedin.com/in/robin-punnoose-251633164">
-            <img class="social" src="./images/linkedin.png" alt="linkedin icon">
-          </a>
+          <!-- SOCIAL -->
+          <div class="social-container">
+            <a class="navbar-brand" target="_blank" href="https://github.com/robinpunn">
+              <img class="social" src="./images/github.png" alt="github icon">
+            </a>
+            <a class="navbar-brand" target="_blank" href="https://linkedin.com/in/robin-punnoose-251633164">
+              <img class="social" src="./images/linkedin.png" alt="linkedin icon">
+            </a>
+          </div>
           <!-- SMALL SCREEN TOGGLE TO DROPDOWN -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,17 +43,17 @@
         </div>
     </nav>
     <!-- CONTENT -->
-    <main class="container-fluid">
-        <div class="row d-flex justify-content-around text-center">
+    <main class="container-fluid vh-100 overflow-hidden">
+        <div class="row d-flex vh-100 justify-content-around text-center">
             <!-- LEFT BODY --> 
-            <section class="col-12 col-md-6 my-5 left_body">   
-                <h1>Hi, I'm</h1>
-                <h2>ROBIN PUNNOOSE</h2>
+            <section class="d-flex flex-column col-12 col-md-6 vh-50 align-content-end">   
+                <h1 class="mt-auto pt-5 fw-bold text-white">Hi, I'm</h1>
+                <h2 class="my-5 p-2 fw-bold border-primary shadow-lg">ROBIN PUNNOOSE</h2>
             </section>
             <!-- RIGHT BODY -->
-            <section class="col-12 col-md-6 my-5 right_body">
-                <h1>I would love to be your</h1>
-                <h2>EMAIL DEVELOPER</h2>
+            <section class="d-flex flex-column col-12 col-md-6 vh-50 align-content-end">
+                <h1 class="mt-auto pt-5 fw-bold text-white">Ready to be your</h1>
+                <h2 class="my-5 p-2 fw-bold">EMAIL DEVELOPER</h2>
             </section>
         </div>
     </main>

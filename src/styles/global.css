@@ -18,7 +18,7 @@ body {
     background-attachment: fixed;
 }
 
-/* NAVBAR (also footer) */
+/* NAVBAR */
 .navbar {
     background-color: #9b8ff4bf;
 }
@@ -28,12 +28,17 @@ body {
 }
 
 .active {
-    color: rgb(133,0,156) !important;
+    color: #85009c !important;
 }
 
 .navbar-nav > .nav-link:hover {
     color:blueviolet !important;
-        background-color: white;
+    background-color: white;
+}
+
+.social {
+    height: 24px;
+    width: 24px;
 }
 
 /* TRANSFROM BIG SCREENS */
