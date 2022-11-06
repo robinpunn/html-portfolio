@@ -13,14 +13,14 @@ body {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", serif;
-    background: linear-gradient(to top,#0000ff1a, #85009c59);
+    background: linear-gradient(to top,rgba(0, 0, 255, 0.102), #85009c59);
     background-repeat: none;
     background-attachment: fixed;
 }
 
 /* NAVBAR */
 .navbar {
-    background-color: #9b8ff4bf;
+    background-color: rgba(0, 0, 255, 0.15);
 }
 
 .logo:hover, .social:hover {

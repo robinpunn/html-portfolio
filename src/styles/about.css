@@ -1,35 +1,22 @@
-html, body {
-    background: linear-gradient(to bottom,rgba(0,0,255,0.1), rgba(133,0,156,.35));
-}
-
- .about_container {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-article {
-    border: solid 5px purple;
-    width: 25%;
-    height: 50vh;
-    text-align: left;
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10em 0;
-    padding: 1rem;
-    background-color: rgba(5,0,255,0.25);
-}
-
+/*Styling h3*/
 h3 {
-    color: rgba(133, 0, 156, 0.85); 
-    text-align: center;
-    border: solid 3px white;
-    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.25);
-    width: 15vw;
-    margin-left: 2em;
+    color:#85009c;
+    background-color: rgba(255, 255, 255,0.4);
 }
 
-h3 + p {
-    margin-top: 1.5em;
+/*Styling paragraph div*/
+.words {
+    background-color: rgba(133, 0, 156,0.4);
 }
 
+/*Height for Large and above*/
+@media only screen and (min-width: 992px) {
+    .words  {
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .words  {
+        height: 420px;
+    }
+}

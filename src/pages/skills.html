@@ -12,7 +12,7 @@
 </head>
 <body>
     <!-- NAVBAR-->
-    <nav class="navbar navbar-expand-md">
+    <nav class="navbar fixed-top navbar-expand-md">
         <!-- LOGO -->
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
@@ -42,14 +42,16 @@
         </div>
     </nav>
     <!-- CONTENT -->
-    <main class="container-fluid text-center">
+    <main class="container-fluid text-center vh-100 m-auto">
         <!-- INTRODUCTION -->
-        <article class="row mt-3">
-            <h3 class="col-12">Skills</h3>
-            <p class="col">Using various online resources, I have built projects using the tools listed below.</p>
-        </article>
+        <section class="row mt-auto vh-50 pt-auto">
+            <article class="d-flex flex-column col m-auto">
+                <h3 class="p-2">Skills</h3>
+                <p class="p-2">Using various online resources, I have built projects using the tools listed below.</p>
+            </article>
+        </section>
         <!-- CONTENT -->
-        <section class="row">
+        <!-- <section class="row">
             <div class="text col-12">
                 <h3></h3>
                 <p></p>
@@ -65,7 +67,8 @@
                     </div>
                 </div>
             </div> 
-        </section>
+        </section> -->
+
     </main>
     <!-- BOOTSTRAP JS -->
     <script type="module" src="../bootstrap/js/main.js"></script>
