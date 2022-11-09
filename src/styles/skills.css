@@ -1,10 +1,15 @@
-/*Styling h3*/
+/*Styling h3 */
 h3 {
     color:#85009c;
     background-color: rgba(255, 255, 255,0.4);
 }
 
+/*Styling h5*/
+h5 {
+    color:#85009c;
+}
+
 /*Styling paragraph div*/
 .icons {
-    background-color: rgba(133, 0, 156,0.4);
+    background-color: rgba(133, 0, 156,0.25);
 }
