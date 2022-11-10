@@ -1,2 +1,118 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
+
+// Global
+*{
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin:0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", serif;
+    background: linear-gradient(to top,rgba(0, 0, 255, 0.102), #85009c59);
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+h2 > a {
+    background-color: rgba(133, 0, 156,0.85);
+    border-radius: 20px;
+}
+
+h2 > a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 > a:hover {
+    background-color: white;
+    color: #85009c !important;
+}
+
+// Galaxy fold
+@media only screen and (max-width: 280px) {
+    h2  {
+        font-size: 18px;
+    }
+}
+
+h3 {
+    color:#85009c;
+    background-color: rgba(255, 255, 255,0.4);
+}
+
+h5 {
+    color:#85009c;
+}
+
+// NAVBAR
+.navbar {
+    background-color: rgba(126, 0, 199, 0.75);
+}
+
+.logo:hover, .social:hover {
+    transform: scale(1.1); 
+}
+
+.active {
+    color: #e96bff !important;
+}
+
+.navbar-nav > .nav-link:hover {
+    color:blueviolet !important;
+    background-color: white;
+}
+
+.social {
+    height: 24px;
+    width: 24px;
+}
+
+//navbar TRANSFROM BIG SCREENS
+@media only screen and (min-width: 768px) {
+    .navbar-nav > .nav-link:hover {
+    color:blueviolet !important;
+        background-color: white;
+        transform: scale(1.2);
+    }
+}
+
+
+//ABOUT PAGE
+//Styling paragraph div
+.words {
+    background-color: rgba(133, 0, 156,0.4);
+}
+
+//Height for Large and above
+@media only screen and (min-width: 992px) {
+    .words  {
+        height: 500px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .words  {
+        height: 420px;
+    }
+}
+
+//SKILLS PAGE
+//Width for title Large and above
+@media only screen and (min-width: 992px) {
+    .title  {
+        width: 50%;
+    }
+}
+
+//Styling paragraph div for skills section
+.icons {
+    background-color: rgba(133, 0, 156,0.25);
+}

@@ -9,7 +9,15 @@ h5 {
     color:#85009c;
 }
 
-/*Styling paragraph div*/
+/*Width for title Large and above*/
+@media only screen and (min-width: 992px) {
+    .title  {
+        width: 50%;
+    }
+}
+
+/*Styling paragraph div for skills section*/
 .icons {
     background-color: rgba(133, 0, 156,0.25);
 }
+
