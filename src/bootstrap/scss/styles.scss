@@ -22,6 +22,7 @@ body {
     background-attachment: fixed;
 }
 
+// headers/titles
 h2 > a {
     background-color: rgba(133, 0, 156,0.85);
     border-radius: 20px;
@@ -37,12 +38,18 @@ h2 > a:hover {
     color: #85009c !important;
 }
 
-// Galaxy fold
-@media only screen and (max-width: 280px) {
+// Font size adjustment for smaller screens
+@media only screen and (max-width: 992px) {
+    h2  {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 300px) {
     h2  {
         font-size: 18px;
     }
 }
+
 
 h3 {
     color:#85009c;
@@ -85,6 +92,32 @@ h5 {
     }
 }
 
+//page transition
+.container {
+    animation: transitionIn 1s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX('-10deg');
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+//HOME PAGE
+// align h2 for larger screens
+@media only screen and (min-width: 768px) {
+    .left-body  {
+        align-items: flex-start;
+    }
+    .right-body {
+        align-items: flex-end;
+    }
+}
 
 //ABOUT PAGE
 //Styling paragraph div
@@ -101,6 +134,11 @@ h5 {
 @media only screen and (min-width: 1200px) {
     .words  {
         height: 420px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .words > p {
+        font-size: 14px;
     }
 }
 
