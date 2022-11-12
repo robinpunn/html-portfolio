@@ -24,7 +24,7 @@ body {
 
 // headers/titles
 h2 > a {
-    background-color: rgba(133, 0, 156,0.85);
+    background-color: rgba(133, 0, 156, 0.851);
     border-radius: 20px;
 }
 
@@ -44,9 +44,9 @@ h2 > a:hover {
         font-size: 26px;
     }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 360px) {
     h2  {
-        font-size: 18px;
+        font-size: 14px;
     }
 }
 
@@ -113,10 +113,15 @@ h5 {
 @media only screen and (min-width: 768px) {
     .left-body  {
         align-items: flex-start;
+        margin-top: auto;
+        margin-bottom: 200px;
     }
     .right-body {
         align-items: flex-end;
+        margin-top: auto;
+        margin-bottom: 200px;
     }
+
 }
 
 //ABOUT PAGE
@@ -149,8 +154,31 @@ h5 {
         width: 50%;
     }
 }
-
+//Icon sizing for Galaxy fold
+@media only screen and (max-width: 300px) {
+    .rounded {
+        width: 100px;
+        height: 100px;
+    }
+}
 //Styling paragraph div for skills section
 .icons {
     background-color: rgba(133, 0, 156,0.25);
+}
+
+//PROJECTS
+// card background
+.card {
+    background-color: rgba(133, 0, 156,0.4);
+}
+//card text 
+.card-body > h5, .card-body > p {
+    font-weight: bold;
+}
+// card paragraph text color
+.card-body > p {
+    color: white;
+}
+.card-img-top:hover {
+    opacity: 0.5;
 }
