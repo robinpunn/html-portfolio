@@ -18,47 +18,52 @@
       }
     </style> -->
 </head>
-<body>
+<body class="h-100 overflow-hidden">
     <!-- NAVBAR-->
-    <nav class="navbar fixed-top navbar-expand-md">
-        <!-- LOGO -->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="./images/robinpunn.png" alt="robinpunn logo">
-          </a>
-          <!-- SOCIAL -->
-          <div class="social-container">
-            <a class="navbar-brand" target="_blank" href="https://github.com/robinpunn">
-              <img class="social" src="./images/github.png" alt="github icon">
-            </a>
-          </div>
+    <nav class="navbar fixed-top navbar-expand-sm">
           <!-- SMALL SCREEN TOGGLE TO DROPDOWN -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <!-- NAV LINKS -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <div class="navbar-nav nav-justified fw-bold">
+          <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
+            <div class="navbar-nav nav-justified fw-bold highlight">
+                <a class="nav-link m-2 active" href="index.html">Home</a>
                 <a class="nav-link m-2 text-white" href="./pages/about.html">About</a>
                 <a class="nav-link m-2 text-white" href="./pages/skills.html">Skills</a>
                 <a class="nav-link m-2 text-white" href="./pages/projects.html  ">Projects</a>
             </div>
           </div>
-        </div>
     </nav>
+    <!-- BANNER -->
+    <div class="w-100 my-5"></div>
+    <div class="banner d-flex flex-column align-items-end w-100 h-25 shadow">
+        <h1 class="mx-auto my-5 text-center fw-bold">Welcome</h1>
+    </div>
     <!-- CONTENT -->
-    <main class="container overflow-hidden">
-        <div class="row vh-100 text-center">
+    <main class="container-fluid h-100 w-100">
+        <div class="row h-25">
+          <div class="col-12 text-center">
+            <h5 class="p-2 mt-2 fw-bold">Check the links below to learn more</h5>
+          </div>
+        </div>
+        <div class="row h-50 text-center">
             <!-- LEFT BODY --> 
-            <section class="d-flex flex-column col-12 col-md-6 vh-50 justify-content-center left-body">   
-                <h2 class="p-3 fw-bold text-white">
-                  <a target="_blank" class="p-3 shadow"href="https://robinpunn.com/">ROBIN PUNNOOSE</a> 
+            <section class="d-flex flex-column col-12 col-md-4 mx-auto left-body">   
+                <h2 class="p-2 fw-bold text-white">
+                  <a target="_blank" class="p-2"href="https://robinpunn.com/">ROBIN PUNNOOSE</a> 
                 </h2>
             </section>
+            <!-- CENTER BODY -->
+            <section class="d-flex flex-column col-12 col-md-4 mx-auto center-body">   
+              <h2 class="p-2 fw-bold text-white">
+                <a target="_blank" class="p-2"href="https://github.com/robinpunn">COMMITTED</a> 
+              </h2>
+          </section>
             <!-- RIGHT BODY -->
-            <section class="d-flex flex-column col-12 col-md-6 vh-50 justify-content-center right-body">
-                <h2 class="p-3 fw-bold text-white">
-                 <a target="_blank" class="p-3 mx-auto shadow" href="https://linkedin.com/in/robin-punnoose-251633164">EMAIL DEVELOPER</a> 
+            <section class="d-flex flex-column col-12 col-md-4 mx-auto right-body">
+                <h2 class="p-2 fw-bold text-white">
+                 <a target="_blank" class="p-2" href="https://linkedin.com/in/robin-punnoose-251633164">EMAIL DEVELOPER</a> 
                 </h2>
             </section>
         </div>

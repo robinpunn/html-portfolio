@@ -23,19 +23,26 @@ body {
 }
 
 // headers/titles
-h2 > a {
-    background-color: rgba(133, 0, 156, 0.851);
-    border-radius: 20px;
-}
+// h2 > a {
+//     border-radius: 20px;
+// }
 
 h2 > a {
     text-decoration: none;
-    color: white;
+    color: #85009c;
 }
 
 h2 > a:hover {
-    background-color: white;
-    color: #85009c !important;
+    background-color: #85009c;
+    text-decoration: underline;
+    color: white !important;
+}
+
+// big scrren margin
+@media only screen and (min-width: 992px) {
+    h2  {
+        margin-top: 50px;
+    }
 }
 
 // Font size adjustment for smaller screens
@@ -44,11 +51,11 @@ h2 > a:hover {
         font-size: 26px;
     }
 }
-@media only screen and (max-width: 360px) {
-    h2  {
-        font-size: 14px;
-    }
-}
+// @media only screen and (max-width: 360px) {
+//     h2  {
+//         font-size: 14px;
+//     }
+// }
 
 
 h3 {
@@ -62,7 +69,7 @@ h5 {
 
 // NAVBAR
 .navbar {
-    background-color: rgba(126, 0, 199, 0.75);
+    background-color: rgb(151, 70, 198);
 }
 
 .logo:hover, .social:hover {
@@ -73,7 +80,7 @@ h5 {
     color: #e96bff !important;
 }
 
-.navbar-nav > .nav-link:hover {
+.highlight > a:hover {
     color:blueviolet !important;
     background-color: white;
 }
@@ -85,15 +92,25 @@ h5 {
 
 //navbar TRANSFROM BIG SCREENS
 @media only screen and (min-width: 768px) {
-    .navbar-nav > .nav-link:hover {
+    .highlight > a:hover {
     color:blueviolet !important;
         background-color: white;
         transform: scale(1.2);
     }
 }
 
+.navbar .navbar-collapse {
+    text-align: center;
+  }
+
+//banner
+.banner {
+    background-color:  rgb(151, 70, 198);
+    color: white;
+}
+
 //page transition
-.container {
+.container, .container-fluid {
     animation: transitionIn 1s;
 }
 @keyframes transitionIn {
@@ -113,16 +130,45 @@ h5 {
 @media only screen and (min-width: 768px) {
     .left-body  {
         align-items: flex-start;
-        margin-top: auto;
-        margin-bottom: 200px;
     }
     .right-body {
         align-items: flex-end;
-        margin-top: auto;
-        margin-bottom: 200px;
     }
-
 }
+//h2 font
+@media only screen and (min-width: 1024px) {
+    .left-body > h2 {
+        font-size: 32px;
+    }
+    .right-body > h2 {
+        font-size: 32px;
+    }
+    .center-body > h2 {
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .left-body > h2 {
+        font-size: 18px;
+    }
+    .right-body > h2 {
+        font-size: 18px;
+    }
+    .center-body > h2 {
+        font-size: 18px;
+    }
+}
+// @media only screen and (max-width: 480px) {
+//     .left-body > h2 {
+//         font-size: 10px;
+//     }
+//     .right-body > h2 {
+//         font-size: 10px;
+//     }
+//     .center-body > h2 {
+//         font-size: 10px;
+//     }
+// }
 
 //ABOUT PAGE
 //Styling paragraph div
@@ -181,4 +227,13 @@ h5 {
 }
 .card-img-top:hover {
     opacity: 0.5;
+}
+
+//scroll bar
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
