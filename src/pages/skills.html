@@ -10,156 +10,149 @@
     <title>My Email Portfolio</title>
 </head>
 <body>
-    <!-- NAVBAR-->
-    <nav class="navbar fixed-top navbar-expand-md">
-        <!-- LOGO -->
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img class="logo" src="../images/robinpunn.png" alt="robinpunn logo">
-          </a>
-          <!-- SOCIAL -->
-          <div class="social-container">
-            <a class="navbar-brand" target="_blank" href="https://github.com/robinpunn">
-                <img class="social" src="../images/github.png" alt="github icon">
-            </a>
-          </div>
-          <!-- SMALL SCREEN TOGGLE TO DROPDOWN -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!-- NAV LINKS -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-            <div class="navbar-nav nav-justified fw-bold">
-                <a class="nav-link m-2 text-white" href="./about.html">About</a>
-                <a class="nav-link m-2 active" aria-current="page" href="./skills.html">Skills</a>
-                <a class="nav-link m-2 text-white" href="./projects.html">Projects</a>
-            </div>
-          </div>
+  <!-- NAVBAR-->
+  <nav class="navbar fixed-top navbar-expand-sm">
+    <!-- SMALL SCREEN TOGGLE TO DROPDOWN -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- NAV LINKS -->
+    <div class="collapse navbar-collapse justify-content-end me-5" id="navbarSupportedContent">
+      <div class="navbar-nav nav-justified fw-bold highlight">
+          <a class="nav-link m-2 text-white" href="../index.html">Home</a>
+          <a class="nav-link m-2 text-white" href="./about.html">About</a>
+          <a class="nav-link m-2 active" href="./skills.html">Skills</a>
+          <a class="nav-link m-2 text-white" href="./projects.html  ">Projects</a>
+      </div>
+    </div>
+  </nav>
+  <!-- BANNER -->
+  <div class="w-100 my-5"></div>
+  <div class="banner d-flex flex-column align-items-end w-100 h-25">
+      <h1 class="mx-auto my-5 text-center fw-bold">MY SKILLS</h1>
+  </div>
+  <!-- CONTENT -->
+  <main class="container overflow-hidden">
+    <!--FIRST-->
+    <!-- TITLE -->
+    <section class="row mt-5 mx-auto pt-5 title">
+            <h3 class="col-12 g-0 mx-auto d-block text-center fw-bold border border-secondary shadow-lg">FAVORITES</h3>
+    </section>
+    <!-- SUBTITLE -->
+    <section class="row g-0">
+        <h5 class="col-12 m-4 g-0 mx-auto mx-auto d-block text-center fw-bold">
+            These are the tools I use most often.
+        </h5>
+    </section>
+    <!-- ICONS -->
+    <section class="row g-0 m-auto icons py-3 shadow">
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">HTML</p>
+            <img class="rounded mx-auto d-block" src="../images/html.png" alt="">
         </div>
-    </nav>
-    <!-- CONTENT -->
-    <main class="container overflow-hidden">
-        <!--FIRST-->
-        <!-- TITLE -->
-        <section class="row mt-5 mx-auto pt-5 title">
-                <h3 class="col-12 g-0 mx-auto d-block text-center fw-bold border border-secondary shadow-lg">SKILLS</h3>
-        </section>
-        <!-- SUBTITLE -->
-        <section class="row g-0">
-            <h5 class="col-12 m-4 g-0 mx-auto mx-auto d-block text-center fw-bold">
-                These are the tools I use most often.
-            </h5>
-        </section>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class=" text-center text-white d-block mx-auto">CSS</p>
+            <img class="rounded mx-auto d-block" src="../images/css.png" alt="">
+        </div>        
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class=" text-center text-white d-block mx-auto">JavaScript</p>
+            <img class="rounded mx-auto d-block" src="../images/js.png" alt="">
+        </div>       
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class=" text-center text-white d-block mx-auto">NodeJs</p>
+            <img class="rounded mx-auto d-block" src="../images/node.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class=" text-center text-white d-block mx-auto">GIMP</p>
+            <img class="rounded mx-auto d-block" src="../images/gimp.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class=" text-center text-white d-block mx-auto">Figma</p>
+            <img class="rounded mx-auto d-block" src="../images/figma.png" alt="">
+        </div>
+    </section>
+    <!--SECOND-->
+    <!-- TITLE -->
+    <section class="row g-0 mt-5 pt-5 mx-auto title">
+        <article class="col-12 m-4 g-0 mx-auto">
+            <h3 class="mx-auto d-block text-center fw-bold border border-secondary shadow-lg">CONTINUING EDUCATION</h3>
+        </article>
+    </section>
+    <!-- SUBTITLE -->
+    <section class="row g-0">
+        <h5 class="col-12 m-4 g-0 mx-auto mx-auto d-block text-center fw-bold">
+            These are tools I am learning by reading documentation and creating projects.
+        </h5>
+    </section>
+    <!-- ICONS -->
+    <section class="row g-0 m-auto icons py-3 shadow">       
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">Sass</p>
+            <img class="rounded mx-auto d-block" src="../images/sass.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">TailwindCSS</p>
+            <img class="rounded mx-auto d-block" src="../images/tailwind.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">MJML</p>
+            <img class="rounded mx-auto d-block" src="../images/mjml.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">Acorn</p>
+            <img class="rounded mx-auto d-block" src="../images/acorn.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">Foundation</p>
+            <img class="rounded mx-auto d-block" src="../images/foundation.png" alt="">
+        </div>       
+        <div class="col-6 col-md-4 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">Maizzle</p>
+            <img class="rounded mx-auto d-block" src="../images/maizzle.png" alt="">
+        </div>      
+    </section>
+        <!--THIRD-->
+    <!-- TITLE -->
+    <section class="row g-0 mt-5 pt-5 mx-auto title">
+        <article class="col-12 mt-4 g-0 mx-auto">
+            <h3 class="mx-auto d-block text-center fw-bold border border-secondary shadow-lg">MY EMAIL DEVELOPMENT PROCESS</h3>
+        </article>
+    </section>
+    <!--SUBTITLE-->
+    <section class="row g-0">
+        <h5 class="col-12 m-4 g-0 mx-auto mx-auto d-block text-center fw-bold">
+            I use the <a class="text-decoration-none" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first">'Mobile First'</a> approach.
+        </h5>
+    </section>
         <!-- ICONS -->
-        <section class="row g-0 m-auto icons py-3 shadow">
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">HTML</p>
-                <img class="rounded mx-auto d-block" src="../images/html.png" alt="">
-            </div>
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class=" text-center text-white d-block mx-auto">CSS</p>
-                <img class="rounded mx-auto d-block" src="../images/css.png" alt="">
-            </div>        
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class=" text-center text-white d-block mx-auto">JavaScript</p>
-                <img class="rounded mx-auto d-block" src="../images/js.png" alt="">
-            </div>       
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class=" text-center text-white d-block mx-auto">NodeJs</p>
-                <img class="rounded mx-auto d-block" src="../images/node.png" alt="">
-            </div>
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class=" text-center text-white d-block mx-auto">GIMP</p>
-                <img class="rounded mx-auto d-block" src="../images/gimp.png" alt="">
-           </div>
-           <div class="col-6 col-md-4 g-0 p-2">
-                <p class=" text-center text-white d-block mx-auto">Figma</p>
-                <img class="rounded mx-auto d-block" src="../images/figma.png" alt="">
-           </div>
-        </section>
-        <!--SECOND-->
-        <!-- TITLE -->
-        <section class="row g-0 mt-5 pt-5 mx-auto title">
-            <article class="col-12 m-4 g-0 mx-auto">
-                <h3 class="mx-auto d-block text-center fw-bold border border-secondary shadow-lg">CONTINUING EDUCATION</h3>
-            </article>
-        </section>
-        <!-- SUBTITLE -->
-        <section class="row g-0">
-            <h5 class="col-12 m-4 g-0 mx-auto mx-auto d-block text-center fw-bold">
-                These are tools I am learning by reading documentation and creating projects.
-            </h5>
-        </section>
-        <!-- ICONS -->
-        <section class="row g-0 m-auto icons py-3 shadow">       
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">Sass</p>
-                <img class="rounded mx-auto d-block" src="../images/sass.png" alt="">
-            </div>
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">TailwindCSS</p>
-                <img class="rounded mx-auto d-block" src="../images/tailwind.png" alt="">
-            </div>
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">MJML</p>
-                <img class="rounded mx-auto d-block" src="../images/mjml.png" alt="">
-            </div>
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">Acorn</p>
-                <img class="rounded mx-auto d-block" src="../images/acorn.png" alt="">
-            </div>
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">Foundation</p>
-                <img class="rounded mx-auto d-block" src="../images/foundation.png" alt="">
-            </div>       
-            <div class="col-6 col-md-4 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">Maizzle</p>
-                <img class="rounded mx-auto d-block" src="../images/maizzle.png" alt="">
-            </div>      
-        </section>
-          <!--THIRD-->
-        <!-- TITLE -->
-        <section class="row g-0 mt-5 pt-5 mx-auto title">
-            <article class="col-12 mt-4 g-0 mx-auto">
-                <h3 class="mx-auto d-block text-center fw-bold border border-secondary shadow-lg">MY EMAIL DEVELOPMENT PROCESS</h3>
-            </article>
-        </section>
-        <!--SUBTITLE-->
-        <section class="row g-0">
-            <h5 class="col-12 m-4 g-0 mx-auto mx-auto d-block text-center fw-bold">
-                I use the <a class="text-decoration-none" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first">'Mobile First'</a> approach.
-            </h5>
-        </section>
-         <!-- ICONS -->
-         <section class="row g-0 mb-5 mx-auto icons py-3 shadow w-50">
-            <div class="col-12 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto process">Gather Ideas</p>
-                <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
-            </div>
-            <div class="col-12 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto process">Plan With Figma</p>
-                <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
-            </div>        
-            <div class="col-12 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto process">Create an HTML Structure</p>
-                <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
-            </div>       
-            <div class="col-12 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto process">Design With CSS</p>
-                <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
-            </div>
-            <div class="col-12 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto process">Test On Various Screen Sizes</p>
-                <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
-            </div>
-            <div class="col-12 g-0 p-2">
-                <p class="text-center text-white d-block mx-auto">Ready for Launch</p>
-                <img class="rounded mx-auto d-block p-2" src="../images/rocket.png" alt="">
-            </div>
-        </section>
-    </main>
-
-    <!-- BOOTSTRAP JS -->
-    <script type="module" src="../bootstrap/js/main.js"></script>
+        <section class="row g-0 mb-5 mx-auto icons py-3 shadow w-50">
+        <div class="col-12 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto process">Gather Ideas</p>
+            <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
+        </div>
+        <div class="col-12 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto process">Plan With Figma</p>
+            <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
+        </div>        
+        <div class="col-12 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto process">Create an HTML Structure</p>
+            <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
+        </div>       
+        <div class="col-12 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto process">Design With CSS</p>
+            <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
+        </div>
+        <div class="col-12 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto process">Test On Various Screen Sizes</p>
+            <img class="rounded mx-auto d-block p-2" src="../images/arrow.png" alt="">
+        </div>
+        <div class="col-12 g-0 p-2">
+            <p class="text-center text-white d-block mx-auto">Ready for Launch</p>
+            <img class="rounded mx-auto d-block p-2" src="../images/rocket.png" alt="">
+        </div>
+    </section>
+  </main>
+  <!-- BOOTSTRAP JS -->
+  <script type="module" src="../bootstrap/js/main.js"></script>
 </body>
 </html>
