@@ -22,6 +22,15 @@ body {
     background-attachment: fixed;
 }
 
+//scroll bar
+body::-webkit-scrollbar {
+    display: none;
+}
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 // headers/titles
 // h2 > a {
 //     border-radius: 20px;
@@ -72,9 +81,9 @@ h5 {
     background-color: rgb(151, 70, 198);
 }
 
-.logo:hover, .social:hover {
-    transform: scale(1.1); 
-}
+// .logo:hover, .social:hover {
+//     transform: scale(1.1); 
+// }
 
 .active {
     color: #e96bff !important;
@@ -85,10 +94,10 @@ h5 {
     background-color: white;
 }
 
-.social {
-    height: 24px;
-    width: 24px;
-}
+// .social {
+//     height: 24px;
+//     width: 24px;
+// }
 
 //navbar TRANSFROM BIG SCREENS
 @media only screen and (min-width: 768px) {
@@ -225,15 +234,17 @@ h5 {
 .card-body > p {
     color: white;
 }
-.card-img-top:hover {
-    opacity: 0.5;
-}
 
-//scroll bar
-body::-webkit-scrollbar {
-    display: none;
-}
-body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
+// .card:hover {
+//     animation: transformation 0.5s;
+// }
+// @keyframes transformation {
+//     from {
+//         transform: scale(1)
+//     }
+//     to {
+//         transform: scale(1.1);
+//     }
+// }
+
+
