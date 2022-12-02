@@ -1,5 +1,5 @@
 // Import all of Bootstrap's CSS
-@import "~bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 // Global
 *{
@@ -31,10 +31,6 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-// headers/titles
-// h2 > a {
-//     border-radius: 20px;
-// }
 
 h2 > a {
     text-decoration: none;
@@ -60,12 +56,6 @@ h2 > a:hover {
         font-size: 26px;
     }
 }
-// @media only screen and (max-width: 360px) {
-//     h2  {
-//         font-size: 14px;
-//     }
-// }
-
 
 h3 {
     color:#85009c;
@@ -81,10 +71,6 @@ h5 {
     background-color: rgb(151, 70, 198);
 }
 
-// .logo:hover, .social:hover {
-//     transform: scale(1.1); 
-// }
-
 .active {
     color: #e96bff !important;
 }
@@ -93,11 +79,6 @@ h5 {
     color:blueviolet !important;
     background-color: white;
 }
-
-// .social {
-//     height: 24px;
-//     width: 24px;
-// }
 
 //navbar TRANSFROM BIG SCREENS
 @media only screen and (min-width: 768px) {
@@ -167,17 +148,6 @@ h5 {
         font-size: 18px;
     }
 }
-// @media only screen and (max-width: 480px) {
-//     .left-body > h2 {
-//         font-size: 10px;
-//     }
-//     .right-body > h2 {
-//         font-size: 10px;
-//     }
-//     .center-body > h2 {
-//         font-size: 10px;
-//     }
-// }
 
 //ABOUT PAGE
 //Styling paragraph div
@@ -223,28 +193,35 @@ h5 {
 
 //PROJECTS
 // card background
-.card {
+.card, .modal {
     background-color: rgba(133, 0, 156,0.4);
 }
 //card text 
 .card-body > h5, .card-body > p {
     font-weight: bold;
 }
-// card paragraph text color
-.card-body > p {
+// card paragraph, and modal text color
+.card-body > p, .modal-title, .modal-sub-title {
     color: white;
 }
 
-// .card:hover {
-//     animation: transformation 0.5s;
-// }
-// @keyframes transformation {
-//     from {
-//         transform: scale(1)
-//     }
-//     to {
-//         transform: scale(1.1);
-//     }
-// }
+.card:hover {
+    border: solid 0.5rem rgb(109, 0, 60);
+    cursor:pointer;
+    background-color: rgba(0, 0, 255, 0.1);
+    transform: scale(1.15);
+}
 
+//Modals
+.modal-content {
+    background-color: rgb(133, 0, 156)
+}
+
+.modal::-webkit-scrollbar {
+    display: none;
+}
+.modal {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 
