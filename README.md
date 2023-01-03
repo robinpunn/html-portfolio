@@ -1,64 +1,93 @@
 ---
 ---
 
-# MAIZLLE NEWSLETTER EMAIL
+# AT&T Transactional Email
 
-### This project was created with <a href="https://maizzle.com/">Maizzle</a>
+### This project was created with <a href="https://mjml.io">MJML</a>
 
-##### Maizzle was installed locally with yarn
+##### MJML was installed locally with npm
 
 ---
 ---
 
-### Getting Started
+<a href="https://mjml.io/download" target="_blank">MJML download instructions</a>
 
+---
+---
 
-Go to this <a href="https://github.com/maizzle/maizzle">repo<a>
+##### Setting up an mjml project with node
 
+</br>
 
-Clone this starter:
+<p>In your project folder, initialize json and install mjml</p>   
+
+ ``` npm init -y && npm install mjml ```
+
+</br>    
+
+<p>Add MJML to path</p>
+
+``` export PATH="$PATH:./node_modules/.bin" ```
+
+</br>
+
+<p>Create mjml file</p>
+
+``` touch index.mjml ```
+
+</br>
+
+<p>Populate mjml file with some code.</p> 
 
 ```
-npx degit maizzle/maizzle my-project
+        <mjml>
+            <mj-head>
+                <mj-attributes>
+                <mj-text padding="0" />
+                <mj-class name="blue" color="blue" />
+                <mj-class name="big" font-size="20px" />
+                <mj-all font-family="Arial" />
+                </mj-attributes>
+            </mj-head>
+            <mj-body>
+                <mj-section>
+                <mj-column>
+                    <mj-text mj-class="blue big">
+                    Hello World!
+                    </mj-text>
+                </mj-column>
+                </mj-section>
+            </mj-body>
+        </mjml>
+
 ```
 
-Install dependencies:
+<p>MJML output to html can be viewed on the command line.</p>
 
 ```
-cd my-project
-
-npm install
+    mjml index.mjml
 ```
+<br/>
 
-Start local development:
-
-```
-npm run dev
-```
-
-Build emails for production:
+ <p>Create an output html file.</p>
 
 ```
-npm run build
+    mjml -r index.mjml -o index.html
 ```
 
-## Documentation
+<br/>
 
-Maizzle documentation is available at https://maizzle.com
+<p>Watch mjml to automatically update html file.</p>
 
-## Issues
+```
+    mjml --watch index.mjml -o index.html
+```
 
-Please open all issues in the [framework repository](https://github.com/maizzle/framework).
+----
+----
+<a href="https://documentation.mjml.io/" target="_blank"> MJML Documentation </a>
 
-## License
+---
+---
 
-The Maizzle framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-[npm]: https://www.npmjs.com/package/@maizzle/framework
-[npm-stats]: https://npm-stat.com/charts.html?package=%40maizzle%2Fframework&from=2019-03-27
-[npm-version-shield]: https://img.shields.io/npm/v/@maizzle/framework.svg?style=flat-square
-[npm-stats-shield]: https://img.shields.io/npm/dt/@maizzle/framework.svg?style=flat-square&color=6875f5
-[github-ci]: https://github.com/maizzle/framework/actions
-[github-ci-shield]: https://img.shields.io/github/workflow/status/maizzle/cli/Node.js%20CI?style=flat-square
-[license]: ./LICENSE
-[license-shield]: https://img.shields.io/npm/l/@maizzle/framework.svg?style=flat-square&color=0e9f6e
