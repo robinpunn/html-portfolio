@@ -1,7 +1,7 @@
 ---
 ---
 
-# Amazon Transactional Email
+# TaxAct Promotional Email
 
 ### This project was created with <a href="https://mjml.io">MJML</a>
 
