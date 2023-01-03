@@ -1,11 +1,11 @@
 ---
 ---
 
-# Acorn Promotional Email
+# NodeJS Newsletter Email
 
-### This project was created with <a href="http://docs.thememountain.com/acorn/">Acorn Email Framework</a>
+### This project was created with <a href="https://get.foundation/emails.html">Foundation for Emails 2</a>
 
-##### The Acorn Email Framework was cloned from this <a href="https://github.com/ThemeMountain/acorn">repo</a>.
+##### The Foundation for Email Framework was cloned from this <a href="https://github.com/foundation/foundation-emails">repo</a>.
 
 ---
 ---
